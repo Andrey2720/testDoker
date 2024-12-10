@@ -1,7 +1,7 @@
 #!groovy
 pipeline {
     agent{
-        label 'master'
+        label 'root'
     }
     stages {
         stage('Example') {
