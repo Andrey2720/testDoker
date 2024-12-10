@@ -1,9 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('ClonRep') {
             steps {
-                echo 'Hello World'
+                sh 'git clone https://github.com/Andrey2720/testDoker.git'
+            }
+        }
+        stage('StartDocker') {
+            steps {
+                sh 'cd /home/admin/testDoker'
+                sh 'docker compose up --build'
             }
         }
     }
