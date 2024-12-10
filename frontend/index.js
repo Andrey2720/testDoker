@@ -7,6 +7,7 @@ function sum(){
 
     const s = first + second
 
-    rezult.innerHTML = s
+    rezult.innerHTML = s 
+    
 
 }
