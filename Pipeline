@@ -9,7 +9,7 @@ pipeline {
         stage('StartDocker') {
             steps {
                 sh 'cd /home/admin/testDoker'
-                sh 'docker compose up --build'
+                sh 'ls -la'
             }
         }
     }
