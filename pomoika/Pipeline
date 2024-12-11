@@ -4,7 +4,8 @@ pipeline {
         stage('ClonRep') {
             steps {
                 sh 'ls -la'
-                sh 'cd pomoika && docker compose up --build'
+                sh 'whoami'
+                sh 'cd pomoika || docker compose up --build'
             }
         }
        
