@@ -4,9 +4,10 @@ pipeline {
         stage('ClonRep') {
             steps {
                 sh 'ls -la'
-                sh './pomoika docker compose up --build'
+                sh 'sudo ./pomoika docker compose up --build'
             }
         }
        
     }
 }
+
