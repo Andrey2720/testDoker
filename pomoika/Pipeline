@@ -4,7 +4,7 @@ pipeline {
         stage('ClonRep') {
             steps {
                 sh 'ls -la'
-                sh 'sudo docker compose up --build'
+                sh 'docker compose up --build'
             }
         }
        
