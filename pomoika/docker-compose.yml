@@ -11,11 +11,17 @@ services:
       - frontend
     networks:
       - dev
+    environment:
+      - HOST=${SERVER_HOST}
+      - PR=${PARAM}
 
   frontend:
     build:
       context: ./frontend
     networks:
       - dev
-      
+    environment:
+      - HOST={$SERVER_HOST}
+      - PR=${PARAM}
+  
     
